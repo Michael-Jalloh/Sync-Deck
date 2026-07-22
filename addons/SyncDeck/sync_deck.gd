@@ -75,7 +75,8 @@ func start_copying() -> void:
 	
 	var source_text = source.text.rstrip(" ")
 	var destination_text = user.text.rstrip(" ")+"@"+ip.text.rstrip(" ")+":"+destination.text.rstrip(" ")
-	pid = OS.create_process("rsync", ["-avzP",source_text, destination_text], true)
+	var args = ["-avzP",source_text, destination_text]
+	pid = OS.create_process("rsync", args, true)
 	if debug_button.button_pressed:
 		print("[DEBUG] -> ","rsync -avzP ", source_text, " ",destination_text)
 		print("[INFO] -> Started sending....")

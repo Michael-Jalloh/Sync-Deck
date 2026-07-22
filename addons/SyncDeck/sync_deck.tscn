@@ -1,10 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://ctw1d51inismg"]
+[gd_scene format=3 uid="uid://ctw1d51inismg"]
 
 [ext_resource type="Script" uid="uid://5i2cy6jdmmbo" path="res://addons/SyncDeck/sync_deck.gd" id="1_r502y"]
-[ext_resource type="AudioStream" uid="uid://brhhsdamvlgwv" path="res://addons/SyncDeck/done.mp3" id="2_0exj8"]
-[ext_resource type="AudioStream" uid="uid://drsmogt6paas0" path="res://addons/SyncDeck/sending.mp3" id="3_liim3"]
+[ext_resource type="AudioStream" uid="uid://chmd8sv04gp47" path="res://addons/SyncDeck/done.mp3" id="2_0exj8"]
+[ext_resource type="AudioStream" uid="uid://dysj55mg70agr" path="res://addons/SyncDeck/sending.mp3" id="3_liim3"]
 
-[node name="SyncDeck" type="Control"]
+[node name="SyncDeck" type="Control" unique_id=2074214296]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -13,7 +13,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_r502y")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1561148557]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -21,97 +21,97 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=1555390081]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer"]
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer" unique_id=322426439]
 custom_minimum_size = Vector2(99, 0)
 layout_mode = 2
 text = "IP:"
 
-[node name="TextEdit" type="TextEdit" parent="VBoxContainer/HBoxContainer"]
+[node name="TextEdit" type="TextEdit" parent="VBoxContainer/HBoxContainer" unique_id=1083175098]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "192.168.100.11"
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer" unique_id=72346217]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer2"]
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer2" unique_id=1785526050]
 custom_minimum_size = Vector2(99, 0)
 layout_mode = 2
 text = "User:"
 
-[node name="TextEdit" type="TextEdit" parent="VBoxContainer/HBoxContainer2"]
+[node name="TextEdit" type="TextEdit" parent="VBoxContainer/HBoxContainer2" unique_id=1719468669]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "deck"
 
-[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer"]
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer" unique_id=1587738711]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer3"]
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer3" unique_id=1374678095]
 custom_minimum_size = Vector2(99, 0)
 layout_mode = 2
 text = "Source:"
 
-[node name="TextEdit" type="TextEdit" parent="VBoxContainer/HBoxContainer3"]
+[node name="TextEdit" type="TextEdit" parent="VBoxContainer/HBoxContainer3" unique_id=63109910]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "/home/omega/Michael/GodotApps/the-last-space-warrior/bin/TheLastSpaceWarrior.x86_64"
 
-[node name="HBoxContainer4" type="HBoxContainer" parent="VBoxContainer"]
+[node name="HBoxContainer4" type="HBoxContainer" parent="VBoxContainer" unique_id=516385895]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer4"]
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer4" unique_id=1603102688]
 custom_minimum_size = Vector2(99, 0)
 layout_mode = 2
 text = "Destination:"
 
-[node name="TextEdit" type="TextEdit" parent="VBoxContainer/HBoxContainer4"]
+[node name="TextEdit" type="TextEdit" parent="VBoxContainer/HBoxContainer4" unique_id=553458770]
 layout_mode = 2
 size_flags_horizontal = 3
 text = "/home/deck/Desktop/LastSpaceWarrior/TheLastSpaceWarrior.x86_64"
 
-[node name="HBoxContainer5" type="HBoxContainer" parent="VBoxContainer"]
+[node name="HBoxContainer5" type="HBoxContainer" parent="VBoxContainer" unique_id=1332348716]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer5"]
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer5" unique_id=590764818]
 custom_minimum_size = Vector2(99, 0)
 layout_mode = 2
 text = "Sound:"
 
-[node name="SoundButton" type="CheckButton" parent="VBoxContainer/HBoxContainer5"]
+[node name="SoundButton" type="CheckButton" parent="VBoxContainer/HBoxContainer5" unique_id=529194353]
 layout_mode = 2
 button_pressed = true
 
-[node name="HBoxContainer6" type="HBoxContainer" parent="VBoxContainer"]
+[node name="HBoxContainer6" type="HBoxContainer" parent="VBoxContainer" unique_id=670598406]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer6"]
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer6" unique_id=1865243591]
 custom_minimum_size = Vector2(99, 0)
 layout_mode = 2
 text = "Debug:"
 
-[node name="DebugButton" type="CheckButton" parent="VBoxContainer/HBoxContainer6"]
+[node name="DebugButton" type="CheckButton" parent="VBoxContainer/HBoxContainer6" unique_id=1227929711]
 layout_mode = 2
 button_pressed = true
 
-[node name="Button" type="Button" parent="VBoxContainer"]
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=829727168]
 layout_mode = 2
 text = "Sync To Deck"
 
-[node name="Button2" type="Button" parent="VBoxContainer"]
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=449514342]
 layout_mode = 2
 text = "Stop Sync"
 
-[node name="Timer" type="Timer" parent="."]
+[node name="Timer" type="Timer" parent="." unique_id=1804605291]
 wait_time = 2.0
 
-[node name="Alarm" type="AudioStreamPlayer" parent="."]
+[node name="Alarm" type="AudioStreamPlayer" parent="." unique_id=1262964632]
 stream = ExtResource("2_0exj8")
 
-[node name="Sending" type="AudioStreamPlayer" parent="."]
+[node name="Sending" type="AudioStreamPlayer" parent="." unique_id=1361912160]
 stream = ExtResource("3_liim3")
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
