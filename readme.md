@@ -1,6 +1,7 @@
 ![Logo](images/icon.png)
 # Sync Deck
 
+[![Buy Me A Coffee](https://cdn.buymeacoffee.com/buttons/default-orange.png)](https://buymeacoffee.com/michaeljalloh)
 ## The new addon uses rsync, So please install it.
 
 This is a Godot 4.x plugin that enables the Godot Editor to send build games to the Steam deck. Tested on MacOS and Linux, as the **scp** application is needed.
